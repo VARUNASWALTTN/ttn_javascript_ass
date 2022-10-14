@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Program to find Simple Interest</title>
+<style>
+
+.center {
+border: 5px solid #FFFF00;
+text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+  <div class="center">
+  <button onclick="simple_interest()">calculate simple interest</button>
+  <p id="amt"></p>
+  <p id="rt"></p>
+  <p id="tm"></p>
+  <h3 id="num"></h3>
+</div>
+  </body>
+
+<script type="text/javascript">
+function simple_interest()
+{
+  let prin = window.prompt("enter the amount :");
+  document.getElementById("amt").innerHTML =  "Amount : " + prin;
+  
+  let rate = window.prompt("enter the rate of interest :");
+      document.getElementById("rt").innerHTML = "rate : " + rate;
+  
+
+  let time = window.prompt("enter the time in years :");
+    document.getElementById("tm").innerHTML = "time : " + time;
+  
+
+
+
+p = parseFloat(prin);
+t = parseFloat(time);
+r = parseFloat(rate);
+si = (p*t*r)/100;
+document.getElementById ('num').innerHTML ="Simple interest : "+si;
+}
+</script>
+</html>

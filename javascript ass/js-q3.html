@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> q3 area of circle</title>
+        <style>
+            .border{
+                align-content: center;
+                width: 80%;
+                margin: 70px;
+                border: 3px solid rebeccapurple;
+                padding: 5px;
+            }
+
+            #ar{
+                size-adjust: 400%;
+                box-sizing: unset;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="border">
+            <label>enter radius of circle (in cm) </label>
+            <input type="text" id="rad"><br><br>
+            <label>area of circle (in cm) </label>
+            <input type="text" id="ar"><br><br>
+            <input type= "submit" onclick = "AreaOfCircle()" > <br>  
+
+        </div>
+
+        <script>
+            function AreaOfCircle(){
+                var r = document.getElementById("rad").value;
+                let a =((22/7)*r*r).toFixed(2);
+                document.getElementById("ar").value = +a; 
+
+            }
+        </script>
+    </body>
+</html>
